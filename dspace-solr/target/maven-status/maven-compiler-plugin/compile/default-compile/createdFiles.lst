@@ -1,0 +1,2 @@
+org/dspace/solr/filters/LocalHostRestrictionFilter.class
+org/dspace/solr/filters/ConfigureLog4jListener.class
