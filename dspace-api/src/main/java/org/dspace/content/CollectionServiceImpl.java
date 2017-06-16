@@ -35,7 +35,7 @@ import java.util.*;
 
 /**
  * Service implementation for the Collection object.
- * This class is responsible for all business logic calls for the Collection object and is autowired by spring.
+ * This class is responsible for all business logic calls f.or the Collection object and is autowired by spring.
  * This class should never be accessed directly.
  *
  * @author kevinvandevelde at atmire.com
@@ -116,6 +116,8 @@ public class CollectionServiceImpl extends DSpaceObjectServiceImpl<Collection> i
         log.info(LogManager.getHeader(context, "create_collection",
                 "collection_id=" + newCollection.getID())
                 + ",handle=" + newCollection.getHandle());
+
+       authorizeService.addPolicy(context,newCollection,Constants.ADMIN,context.getCurrentUser(),null);
 
         collectionDAO.save(context, newCollection);
         return newCollection;
