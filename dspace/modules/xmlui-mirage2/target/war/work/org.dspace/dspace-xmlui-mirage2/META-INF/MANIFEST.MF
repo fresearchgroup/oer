@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: DSpace XML-UI Mirage2 Theme
+Implementation-Version: 6.0
+Archiver-Version: Plexus Archiver
+Built-By: dspace
+Specification-Vendor: DuraSpace
+Specification-Title: DSpace XML-UI Mirage2 Theme
+Implementation-Vendor-Id: org.dspace
+Implementation-Vendor: DuraSpace
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_131
+Specification-Version: 6.0
+Implementation-URL: https://github.com/dspace/DSpace/dspace-xmlui-mira
+ ge2
+

@@ -1,0 +1,12 @@
+{
+  "name": "jqueryuibootstrap",
+  "homepage": "https://github.com/addyosmani/jquery-ui-bootstrap",
+  "_release": "4f3772cd37",
+  "_resolution": {
+    "type": "commit",
+    "commit": "4f3772cd37b898f456c0126c4b44178ce8d4aad7"
+  },
+  "_source": "https://github.com/addyosmani/jquery-ui-bootstrap.git",
+  "_target": "4f3772cd37b898f456c0126c4b44178ce8d4aad7",
+  "_originalSource": "jqueryuibootstrap"
+}
