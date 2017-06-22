@@ -108,8 +108,22 @@ public class CommunityServiceImpl extends DSpaceObjectServiceImpl<Community> imp
         // of 'anonymous' READ
         Group anonymousGroup = groupService.findByName(context, Group.ANONYMOUS);
 
+        /*authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.READ, null);
+authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.ADD, null);*/
+
+          if(parent==null)
+        {
         authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.READ, null);
-authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.ADD, null);
+        authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.ADD, null);
+authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.WRITE, null);
+         }
+        else if(parent!=null)
+         {
+         authorizeService.addPolicy(context,newCommunity,Constants.ADD,context.getCurrentUser(),null);
+        authorizeService.createResourcePolicy(context, newCommunity, anonymousGroup, null, Constants.READ, null);
+                
+         }
+         
         communityDAO.save(context, newCommunity);
 
         context.addEvent(new Event(Event.CREATE, Constants.COMMUNITY, newCommunity.getID(), newCommunity.getHandle(), getIdentifiers(context, newCommunity)));

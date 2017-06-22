@@ -2,8 +2,8 @@
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 <body>
 <div id="file.news.div.news" n="news" rend="primary">
-<head>DSpace Repository</head>
-<p>DSpace is a digital service that collects, preserves, and distributes digital material. Repositories are important tools for preserving an organization&apos;s legacy; they facilitate digital preservation and scholarly communication.</p>
+<head>OER Hub</head>
+<p>OER Hub (where, OER stands for Open Educational Resources) is a platform created for the free and easy access to educational digital material across the globe. The resources available on this platform comprises of thousands of course videos, books, articles etc. This Hub is an attempt to spread knowledge unequivocally to a wider audience, reaching uncharted territories and thereby bringing the world closer together.</p>
 </div>
 </body>
 <options/>

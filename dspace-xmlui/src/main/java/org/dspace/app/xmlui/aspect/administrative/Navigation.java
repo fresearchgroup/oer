@@ -267,19 +267,29 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
             if (communityService.canEditBoolean(this.context, community))
             {
             	context.setHead(T_context_head);
-            	context.addItemXref(contextPath+"/admin/community?communityID=" + community.getID(), T_context_edit_community); 
+            	
             	if (authorizeService.isAdmin(this.context, dso))
                 {
+		    context.addItemXref(contextPath+"/admin/community?communityID=" + community.getID(), T_context_edit_community); 
                     context.addItem().addXref(contextPath + "/admin/export?communityID=" + community.getID(), T_context_export_community);
+	            context.addItem().addXref(contextPath+ "/csv/handle/"+dso.getHandle(),T_context_export_metadata );
                 }
-                context.addItem().addXref(contextPath+ "/csv/handle/"+dso.getHandle(),T_context_export_metadata );
+                
             }
-            
+            DSpaceObject parnt=community;//vaibhav
+   try
+{
+         parnt=authorizeService.getparent(this.context,community); //vaibhav
+}
+ catch(SQLException e)
+{}
             // can they add to this community?
             if (authorizeService.authorizeActionBoolean(this.context, community, Constants.ADD))
             {
             	context.setHead(T_context_head);
             	context.addItemXref(contextPath+"/admin/collection?createNew&communityID=" + community.getID(), T_context_create_collection);
+         
+ 		if(parnt==null) 
                 context.addItemXref(contextPath+"/admin/community?createNew&communityID=" + community.getID(), T_context_create_subcommunity);      
             }
     	}

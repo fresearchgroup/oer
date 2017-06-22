@@ -401,6 +401,13 @@ public class AuthorizeServiceImpl implements AuthorizeService
         return false;
     }
 
+	     public DSpaceObject getparent(Context c,DSpaceObject o) throws SQLException
+      {
+ 
+              return serviceFactory.getDSpaceObjectService(o).getParentObject(c, o);//vaibhav    
+
+      }
+
     @Override
     public boolean isAdmin(Context c) throws SQLException
     {

@@ -99,6 +99,8 @@ public interface AuthorizeService {
     public void authorizeAction(Context c, EPerson e, DSpaceObject o, int action, boolean useInheritance)
             throws AuthorizeException, SQLException;
     
+
+public DSpaceObject getparent(Context c,DSpaceObject o) throws SQLException;
     /**
      * same authorize, returns boolean for those who don't want to deal with
      * catching exceptions.

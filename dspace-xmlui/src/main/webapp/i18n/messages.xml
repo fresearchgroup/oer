@@ -24,10 +24,10 @@
 		-->
 
 	<!-- General keys -->
-	<message key="xmlui.general.dspace_home">DSpace Home</message>
+	<message key="xmlui.general.dspace_home">OER Hub</message>
 	<message key="xmlui.general.search">Search</message>
 	<message key="xmlui.general.go">Go</message>
-	<message key="xmlui.general.go_home">Go to DSpace home</message>
+	<message key="xmlui.general.go_home">Go to OER Hub</message>
 	<message key="xmlui.general.save">Save</message>
 	<message key="xmlui.general.cancel">Cancel</message>
 	<message key="xmlui.general.return">Return</message>
@@ -65,7 +65,7 @@
 	<!--
 		This section is for feed syndications (RSS, atom, etc)
 	-->
-	<message key="xmlui.feed.general_description">The DSpace digital repository system captures, stores, indexes, preserves, and distributes digital research material.</message>
+	<message key="xmlui.feed.general_description">The OER Hub digital repository system captures, stores, indexes, preserves, and distributes digital educational research material.</message>
     <message key="xmlui.feed.header">RSS Feeds</message>
 	<message key="xmlui.feed.logo_title">The Channel Image</message>
 	<message key="xmlui.feed.untitled">Untitled</message>
@@ -79,18 +79,18 @@
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		          ArtifactBrowser Aspect
-        NOTE: As of DSpace 6.0, the ArtifactBrowser Aspect was removed (in favor
+        NOTE: As of OER Hub 6.0, the ArtifactBrowser Aspect was removed (in favor
         of the ViewArtifacts, BrowseArtifacts and SearchArtifacts aspects). 
         However, many of its classes and corresponding i18n keys still exist as 
         they are used by other aspects.
 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-        <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
+        <!-- Note: As of OER Hub 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
         <!-- The following keys are still in use by Discovery's AbstractSearch -->
         <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
-	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All of DSpace</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All of OER Hub</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
-    <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
+    <!-- Note: As of OER Hub 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
     <!-- The following "type_*" i18n keys will be left as is as they're referenced by the Discovery's SidebarFacetsTransformer
          but in future, they should be refactored to a more relevant key prefix -->
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
@@ -179,8 +179,8 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
-	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All of DSpace</message>
-	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this collection:</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All of OER Hub</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this lesson:</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Titles</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Authors</message>
@@ -189,22 +189,22 @@
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_recent_submissions">Recent Submissions</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Community List</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Community List</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Communities in DSpace</message>
-	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Select a community to browse its collections.</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Department List</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Department List</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Departments at OER Hub</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Select a department to browse its courses.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Search Scope</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">All of DSpace</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Search within this community and its collections:</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">All of OER Hub</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Search within this department and its courses:</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Titles</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Authors</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_dates">Dates</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Advanced Search</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Sub-communities within this community</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Collections in this community</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Courses under this department</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Lessons in this course</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Recent Submissions</message>
 
 
@@ -221,7 +221,7 @@
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.title">Give feedback</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Give feedback</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.head">Give feedback</message>
-	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Thanks for sharing your feedback about the OER Hub system. Your comments are appreciated!</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.email">Your Email</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">This address will be used to follow up on your feedback.</message>
 	<message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comments</message>
@@ -235,29 +235,29 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
 	<message key="xmlui.ArtifactBrowser.ItemViewer.trail">View Item</message>
-	<message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">This item appears in the following Collection(s)</message>
+	<message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">This item appears in the following Lesson(s)</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Show simple item record</message>
 	<message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Show full item record</message>
 
         <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">This item has been withdrawn and is no longer available.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
-        <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.Navigation has been removed. -->
+        <!-- Note: As of OER Hub 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.Navigation has been removed. -->
         <!-- The following i18n keys will be left as is as they're referenced by the Discovery's Navigation
          but in future, they should be refactored to a more relevant key prefix -->
 	<message key="xmlui.ArtifactBrowser.Navigation.head_browse">Browse</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of DSpace</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Communities &amp; Collections</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of OER Hub</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Departments &amp; Courses</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Titles</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Subjects</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">By Issue Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Collection</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">This Community</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">This Lesson</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">This Department</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
-        <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.SimpleSearch has been removed. -->
+        <!-- Note: As of OER Hub 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.SimpleSearch has been removed. -->
         <!-- The following i18n keys will be left as is as they're referenced by the Discovery's SimpleSearch
          but in future, they should be refactored to a more relevant key prefix -->
 	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
@@ -270,17 +270,17 @@
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">This resource is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.trail">Restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_resource">This resource is restricted</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_community">This community is restricted</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_collection">This collection is restricted</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_community">This department is restricted</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_collection">This lesson is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_item">This item is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_bitstream">This bitstream is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_resource">You do not have the credentials to access the restricted resource.</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_community">You do not have the credentials to access the restricted community <b>{0}</b>.</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_collection">You do not have the credentials to access the restricted collection <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_community">You do not have the credentials to access the restricted department <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_collection">You do not have the credentials to access the restricted lesson <b>{0}</b>.</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item">You do not have the credentials to access the restricted item <b>{0}</b>.</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_bitstream">You do not have the credentials to access the restricted bitstream <b>{0}</b>.</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_collection">collection</message>
-	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_community">community</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_collection">lesson</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_community">department</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_bitstream">bitstream</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_item">item</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_resource">resource</message>
@@ -435,7 +435,7 @@
 	<!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
 	<message key="xmlui.EPerson.CannotRegister.title">Registration unavailable</message>
 	<message key="xmlui.EPerson.CannotRegister.head">Registration unavailable</message>
-	<message key="xmlui.EPerson.CannotRegister.para1">The configuration of this DSpace repository does not allow registration in this context. Please contact the <a href="../contact">site administrator</a> with questions or comments.</message>
+	<message key="xmlui.EPerson.CannotRegister.para1">The configuration of this OER Hub repository does not allow registration in this context. Please contact the <a href="../contact">site administrator</a> with questions or comments.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
 	<message key="xmlui.EPerson.EditProfile.title_update">Update Profile</message>
@@ -449,9 +449,9 @@
 	<message key="xmlui.EPerson.EditProfile.telephone">Contact Telephone</message>
         <message key="xmlui.EPerson.EditProfile.Language">Language</message>
 	<message key="xmlui.EPerson.EditProfile.subscriptions">Subscriptions</message>
-	<message key="xmlui.EPerson.EditProfile.subscriptions_help">You may subscribe to collections to receive daily e-mail alerts of new items added. You can subscribe to as many or as few collections as you wish. Another alternative to daily e-mail alerts is to use the RSS feeds available for all collections.</message>
+	<message key="xmlui.EPerson.EditProfile.subscriptions_help">You may subscribe to lessons to receive daily e-mail alerts of new items added. You can subscribe to as many or as few lessons as you wish. Another alternative to daily e-mail alerts is to use the RSS feeds available for all lessons.</message>
 	<message key="xmlui.EPerson.EditProfile.email_subscriptions">Email Subscriptions</message>
-	<message key="xmlui.EPerson.EditProfile.select_collection">( Select Collection )</message>
+	<message key="xmlui.EPerson.EditProfile.select_collection">( Select Lesson )</message>
 	<message key="xmlui.EPerson.EditProfile.update_password_instructions">Optionally, you can enter a new password in the box below, and confirm it by typing it again into the second box. It should be at least six characters long.</message>
 	<message key="xmlui.EPerson.EditProfile.create_password_instructions">Please enter a password in the box below, and confirm it by typing it again into the second box. It should be at least six characters long.</message>
 	<message key="xmlui.EPerson.EditProfile.password">Password</message>
@@ -495,20 +495,20 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 	<message key="xmlui.EPerson.PasswordLogin.title">Sign in</message>
 	<message key="xmlui.EPerson.PasswordLogin.trail">Sign in</message>
-	<message key="xmlui.EPerson.PasswordLogin.head1">Sign in to DSpace</message>
+	<message key="xmlui.EPerson.PasswordLogin.head1">Sign in to OER Hub</message>
 	<message key="xmlui.EPerson.PasswordLogin.email_address">E-Mail Address</message>
 	<message key="xmlui.EPerson.PasswordLogin.error_bad_login">The email address and/or password supplied were not valid.</message>
 	<message key="xmlui.EPerson.PasswordLogin.password">Password</message>
 	<message key="xmlui.EPerson.PasswordLogin.forgot_link"> Forgot your password?</message>
 	<message key="xmlui.EPerson.PasswordLogin.submit">Sign in</message>
 	<message key="xmlui.EPerson.PasswordLogin.head2">Register new user</message>
-	<message key="xmlui.EPerson.PasswordLogin.para1">Register an account to subscribe to collections for email updates, and submit new items to DSpace.</message>
+	<message key="xmlui.EPerson.PasswordLogin.para1">Register an account to subscribe to lessons for email updates, and submit new items to OER Hub.</message>
 	<message key="xmlui.EPerson.PasswordLogin.register_link">Click here to register.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 	<message key="xmlui.EPerson.LDAPLogin.title">Sign in</message>
 	<message key="xmlui.EPerson.LDAPLogin.trail">Sign in</message>
-	<message key="xmlui.EPerson.LDAPLogin.head1">Sign in to DSpace</message>
+	<message key="xmlui.EPerson.LDAPLogin.head1">Sign in to OER Hub</message>
 	<message key="xmlui.EPerson.LDAPLogin.username">User Name</message>
 	<message key="xmlui.EPerson.LDAPLogin.error_bad_login">The user name and/or password supplied were not valid.</message>
 	<message key="xmlui.EPerson.LDAPLogin.password">Password</message>
@@ -547,7 +547,7 @@
 	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
 	<message key="xmlui.EPerson.RegistrationFinished.title">Registration finished</message>
 	<message key="xmlui.EPerson.RegistrationFinished.head">Registration Finished</message>
-	<message key="xmlui.EPerson.RegistrationFinished.para1">You're now registered to use the DSpace system.  You can subscribe to collections to receive email updates about new items.</message>
+	<message key="xmlui.EPerson.RegistrationFinished.para1">You're now registered to use the OER Hub system.  You can subscribe to lessons to receive email updates about new items.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
 	<message key="xmlui.EPerson.ResetPassword.title">Reset password</message>
@@ -563,7 +563,7 @@
 	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
 	<message key="xmlui.EPerson.StartForgotPassword.title">Forgot Password</message>
 	<message key="xmlui.EPerson.StartForgotPassword.head">Forgot Password</message>
-	<message key="xmlui.EPerson.StartForgotPassword.para1">Enter the email address you provided when you registered with DSpace. An email will be sent to that address with further instructions.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.para1">Enter the email address you provided when you registered with OER Hub. An email will be sent to that address with further instructions.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartForgotPassword.email_address_help">Enter the same address used when registering.</message>
 	<message key="xmlui.EPerson.StartForgotPassword.error_not_found">Email address not found.</message>
@@ -576,7 +576,7 @@
 	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Reset password for</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Reset password</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">New user registration</message>
-	<message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to DSpace.</message>
+	<message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to lessons for email updates, and submit new items to OER Hub.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">This address will be verified and used as your login name.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Unable to send email to this address.</message>
@@ -605,8 +605,8 @@
 
 
 	<!-- general submission aspect messages -->
-	<message key="xmlui.Submission.general.mydspace_home">MyDSpace Home</message>
-	<message key="xmlui.Submission.general.go_mydspace">Go to MyDSpace Home</message>
+	<message key="xmlui.Submission.general.mydspace_home">MyOER Hub Home</message>
+	<message key="xmlui.Submission.general.go_mydspace">Go to MyOER Hub Home</message>
 	<message key="xmlui.Submission.general.submission.title">Item submission</message>
 	<message key="xmlui.Submission.general.submission.trail">Item submission</message>
 	<message key="xmlui.Submission.general.submission.head">Item submission</message>
@@ -623,7 +623,7 @@
 	<message key="xmlui.Submission.general.default.trail">Submission</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
-	<message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this collection</message>
+	<message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this lesson</message>
 
 	<!-- org.dspace.app.xmlui.submission.Navigation -->
 	<message key="xmlui.Submission.Navigation.submissions">Submissions</message>
@@ -642,7 +642,7 @@
 	<message key="xmlui.Submission.Submissions.workflow_column1"></message>
 	<message key="xmlui.Submission.Submissions.workflow_column2">Task</message>
 	<message key="xmlui.Submission.Submissions.workflow_column3">Item</message>
-	<message key="xmlui.Submission.Submissions.workflow_column4">Collection</message>
+	<message key="xmlui.Submission.Submissions.workflow_column4">Lesson</message>
 	<message key="xmlui.Submission.Submissions.workflow_column5">Submitter</message>
 	<message key="xmlui.Submission.Submissions.workflow_submit_return">Return selected tasks to the pool</message>
 	<message key="xmlui.Submission.Submissions.workflow_info2">No tasks are assigned to you</message>
@@ -653,14 +653,14 @@
 	<message key="xmlui.Submission.Submissions.submit_head1">Submissions</message>
 	<message key="xmlui.Submission.Submissions.submit_info1a">You may </message>
 	<message key="xmlui.Submission.Submissions.submit_info1b">start a new submission.</message>
-	<message key="xmlui.Submission.Submissions.submit_info1c">The submission process includes describing the item and uploading the file(s) comprising it. Each community or collection may set its own submission policy.</message>
+	<message key="xmlui.Submission.Submissions.submit_info1c">The submission process includes describing the item and uploading the file(s) comprising it. Each department or course may set its own submission policy.</message>
 	<message key="xmlui.Submission.Submissions.submit_head2">Unfinished submissions</message>
 	<message key="xmlui.Submission.Submissions.submit_info2a">These are incomplete item submissions. You may also </message>
 	<message key="xmlui.Submission.Submissions.submit_info2b">start another submission</message>
 	<message key="xmlui.Submission.Submissions.submit_info2c">.</message>
 	<message key="xmlui.Submission.Submissions.submit_column1"></message>
 	<message key="xmlui.Submission.Submissions.submit_column2">Title</message>
-	<message key="xmlui.Submission.Submissions.submit_column3">Collection</message>
+	<message key="xmlui.Submission.Submissions.submit_column3">Lesson</message>
 	<message key="xmlui.Submission.Submissions.submit_column4">Submitter</message>
 	<message key="xmlui.Submission.Submissions.submit_head3">Authoring:</message>
 	<message key="xmlui.Submission.Submissions.submit_info3">No submissions left unfinished.</message>
@@ -668,9 +668,9 @@
 	<message key="xmlui.Submission.Submissions.submit_submit_remove">Remove selected submissions</message>
 	<!-- Same transformer, inprogress section -->
 	<message key="xmlui.Submission.Submissions.progress_head1">Submissions being reviewed</message>
-	<message key="xmlui.Submission.Submissions.progress_info1">These are your completed submissions which are currently being reviewed by collection curators.</message>
+	<message key="xmlui.Submission.Submissions.progress_info1">These are your completed submissions which are currently being reviewed by lesson curators.</message>
 	<message key="xmlui.Submission.Submissions.progress_column1">Title</message>
-	<message key="xmlui.Submission.Submissions.progress_column2">Collection</message>
+	<message key="xmlui.Submission.Submissions.progress_column2">Lesson</message>
 	<message key="xmlui.Submission.Submissions.progress_column3">Status</message>
 	<!-- Same transformer, workflow status -->
 	<message key="xmlui.Submission.Submissions.status_0">Submitted</message>
@@ -684,10 +684,10 @@
 	<message key="xmlui.Submission.Submissions.status_unknown">Unknown state</message>
         <!-- Same transformer, completed submissions section -->
         <message key="xmlui.Submission.Submissions.completed.head">Archived Submissions</message>
-        <message key="xmlui.Submission.Submissions.completed.info">These are your completed submissions which have been accepted into DSpace.</message>
+        <message key="xmlui.Submission.Submissions.completed.info">These are your completed submissions which have been accepted into OER Hub.</message>
         <message key="xmlui.Submission.Submissions.completed.column1">Date accepted</message>
         <message key="xmlui.Submission.Submissions.completed.column2">Title</message>
-        <message key="xmlui.Submission.Submissions.completed.column3">Collection</message>
+        <message key="xmlui.Submission.Submissions.completed.column3">Lesson</message>
         <message key="xmlui.Submission.Submissions.completed.limit">We've only listed 50 of your archived submissions above. </message>
         <message key="xmlui.Submission.Submissions.completed.displayall">Display all my archived submissions.</message>
 
@@ -706,10 +706,10 @@
 	<message key="xmlui.Submission.submit.ResumeStep.submit_resume">Resume</message>
 
 	<!-- org.dspace.app.xmlui.Submission.submit.SelectCollection -->
-	<message key="xmlui.Submission.submit.SelectCollection.head">Select a collection</message>
-	<message key="xmlui.Submission.submit.SelectCollection.collection">Collection</message>
-	<message key="xmlui.Submission.submit.SelectCollection.collection_help">Select the collection you wish to submit an item to.</message>
-	<message key="xmlui.Submission.submit.SelectCollection.collection_default">Select a collection...</message>
+	<message key="xmlui.Submission.submit.SelectCollection.head">Select a lesson</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection">Lesson</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection_help">Select the lesson you wish to submit an item to.</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection_default">Select a lesson...</message>
 
 	<!-- org.dspace.app.xmlui.Submission.submit.SaveOrRemoveStep -->
 	<message key="xmlui.Submission.submit.SaveOrRemoveStep.head">Save or cancel your submission?</message>
@@ -772,7 +772,7 @@
     <message key="xmlui.Submission.submit.AccessStep.error_missing_date">When Embargo selected, date is required</message>
     <message key="xmlui.Submission.submit.AccessStep.error_duplicated_policy">An identical policy for this group and this action is already in place.</message>
     <message key="xmlui.Submission.submit.AccessStep.table_policies">Group policies</message>
-    <message key="xmlui.Submission.submit.AccessStep.policies_help">Policies listed in this section override any default policies for the collection you're submitting to. If you wish to set an embargo but the target collection allows access for any user, you must set a policy that allows access for the Anonymous group only from a specific date onwards.</message>
+    <message key="xmlui.Submission.submit.AccessStep.policies_help">Policies listed in this section override any default policies for the lesson you're submitting to. If you wish to set an embargo but the target lesson allows access for any user, you must set a policy that allows access for the Anonymous group only from a specific date onwards.</message>
     <message key="xmlui.Submission.submit.AccessStep.no_policies">No group policies have been set up for this item.</message>
     <message key="xmlui.Submission.submit.AccessStep.new_policy_head">Embargo</message>
     <message key="xmlui.Submission.submit.AccessStep.private_settings">Private item</message>
@@ -901,7 +901,7 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
 	<message key="xmlui.Submission.submit.LicenseStep.head">Distribution License</message>
-	<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>There is one last step:</strong> In order for DSpace to reproduce, translate and distribute your submission worldwide, you must agree to the following terms.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>There is one last step:</strong> In order for OER Hub to reproduce, translate and distribute your submission worldwide, you must agree to the following terms.</message>
 	<message key="xmlui.Submission.submit.LicenseStep.info2">Grant the standard distribution license by selecting 'I Grant the License'; and then click 'Complete Submission'.</message>
 	<message key="xmlui.Submission.submit.LicenseStep.info3">If you have questions regarding this license please contact the system administrators.</message>
 	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Distribution license</message>
@@ -915,7 +915,7 @@
 
 	<!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
 	<message key="xmlui.Submission.submit.CompletedStep.head">Submission complete</message>
-	<message key="xmlui.Submission.submit.CompletedStep.info1">Your submission will now go through the review process for this collection. You will receive e-mail notification as soon as your submission has joined the collection, or if there is a problem with your submission. You may also check on the status of your submission by visiting your submissions page.</message>
+	<message key="xmlui.Submission.submit.CompletedStep.info1">Your submission will now go through the review process for this lesson. You will receive e-mail notification as soon as your submission has joined the lesson, or if there is a problem with your submission. You may also check on the status of your submission by visiting your submissions page.</message>
 	<message key="xmlui.Submission.submit.CompletedStep.go_submission">Go to the Submissions page</message>
 	<message key="xmlui.Submission.submit.CompletedStep.submit_again">Submit another item</message>
 
@@ -925,11 +925,11 @@
 	<message key="xmlui.Submission.workflow.PerformTaskStep.take_submit">Take task</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_help">Leave this task in the pool for another user to take.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit">Leave task</message>
-	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">If you have reviewed the item and it is suitable for inclusion in the collection, select "Approve".</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">If you have reviewed the item and it is suitable for inclusion in the lesson, select "Approve".</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit">Approve item</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Once you've edited the item, use this option to commit the item to the archive.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit">Commit to archive</message>
-	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select "Reject".  You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the lesson, select "Reject".  You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit">Reject item</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Select this option to change the item's metadata.</message>
 	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Edit metadata</message>
@@ -977,7 +977,7 @@
 	<message key="xmlui.administrative.FlowItemUtils.item_withdrawn">The item has been withdrawn.</message>
 	<message key="xmlui.administrative.FlowItemUtils.item_reinstated">The item has been reinstated.</message>
 	<message key="xmlui.administrative.FlowItemUtils.item_moved">The item has been moved.</message>
-	<message key="xmlui.administrative.FlowItemUtils.item_move_failed">The selected destination collection could not be found.</message>
+	<message key="xmlui.administrative.FlowItemUtils.item_move_failed">The selected destination lesson could not be found.</message>
 	<message key="xmlui.administrative.FlowItemUtils.bitstream_added">The new bitstream was successfully uploaded.</message>
 	<message key="xmlui.administrative.FlowItemUtils.bitstream_failed">Error while uploading file.</message>
 	<message key="xmlui.administrative.FlowItemUtils.bitstream_updated">The bitstream has been updated.</message>
@@ -992,15 +992,15 @@
 	<!-- contextual menu items -->
 	<message key="xmlui.administrative.Navigation.context_head">Context</message>
 	<message key="xmlui.administrative.Navigation.context_edit_item">Edit this item</message>
-	<message key="xmlui.administrative.Navigation.context_edit_collection">Edit Collection</message>
+	<message key="xmlui.administrative.Navigation.context_edit_collection">Edit Lesson</message>
 	<message key="xmlui.administrative.Navigation.context_item_mapper">Item Mapper</message>
-	<message key="xmlui.administrative.Navigation.context_edit_community">Edit Community</message>
-	<message key="xmlui.administrative.Navigation.context_create_collection">Create Collection</message>
-	<message key="xmlui.administrative.Navigation.context_create_subcommunity">Create Sub-community</message>
-	<message key="xmlui.administrative.Navigation.context_create_community">Create Community</message>
+	<message key="xmlui.administrative.Navigation.context_edit_community">Edit Department</message>
+	<message key="xmlui.administrative.Navigation.context_create_collection">Create Lesson</message>
+	<message key="xmlui.administrative.Navigation.context_create_subcommunity">Create Course</message>
+	<message key="xmlui.administrative.Navigation.context_create_community">Create Department</message>
 	<message key="xmlui.administrative.Navigation.context_export_item">Export Item</message>
-    <message key="xmlui.administrative.Navigation.context_export_collection">Export Collection</message>
-    <message key="xmlui.administrative.Navigation.context_export_community">Export Community</message>
+    <message key="xmlui.administrative.Navigation.context_export_collection">Export Lesson</message>
+    <message key="xmlui.administrative.Navigation.context_export_community">Export Department</message>
     <message key="xmlui.administrative.Navigation.context_export_metadata">Export Metadata</message>
     <message key="xmlui.administrative.Navigation.context_search_export_metadata">Export Search Metadata</message>
 
@@ -1030,14 +1030,14 @@
 	<!-- export item -->
 	<message key="xmlui.administrative.ItemExport.head">Export Archive</message>
 	<message key="xmlui.administrative.ItemExport.item.id.error">The item id provided is invalid.</message>
-	<message key="xmlui.administrative.ItemExport.collection.id.error">The collection id provided is invalid.</message>
-	<message key="xmlui.administrative.ItemExport.community.id.error">The community id provided is invalid</message>
+	<message key="xmlui.administrative.ItemExport.collection.id.error">The lesson id provided is invalid.</message>
+	<message key="xmlui.administrative.ItemExport.community.id.error">The department id provided is invalid</message>
 	<message key="xmlui.administrative.ItemExport.item.not.found">The item requested was not found.</message>
-	<message key="xmlui.administrative.ItemExport.collection.not.found">The collection requested was not found.</message>
-	<message key="xmlui.administrative.ItemExport.community.not.found">The community requested was not found.</message>
+	<message key="xmlui.administrative.ItemExport.collection.not.found">The lesson requested was not found.</message>
+	<message key="xmlui.administrative.ItemExport.community.not.found">The department requested was not found.</message>
 	<message key="xmlui.administrative.ItemExport.item.success">The item was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
-	<message key="xmlui.administrative.ItemExport.collection.success">The collection was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
-	<message key="xmlui.administrative.ItemExport.community.success">The community was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
+	<message key="xmlui.administrative.ItemExport.collection.success">The lesson was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
+	<message key="xmlui.administrative.ItemExport.community.success">The department was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
 	<message key="xmlui.administrative.ItemExport.available.head">Available export archives for download:</message>
 
 
@@ -1133,7 +1133,7 @@
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column2">ID</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column3">Name</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.search_column4">Members</message>
-	<message key="xmlui.administrative.group.ManageGroupsMain.search_column5">Community / Collection</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column5">Department / Lesson</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.collection_link">View</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.submit_delete">Delete groups</message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.no_results">Your search found no results...</message>
@@ -1150,10 +1150,10 @@
 	<message key="xmlui.administrative.group.EditGroupForm.pending_warn">Note, pending changes are not saved until you click the save button.</message>
 	<message key="xmlui.administrative.group.EditGroupForm.submit_add">Add</message>
 	<message key="xmlui.administrative.group.EditGroupForm.submit_remove">Remove</message>
-	<message key="xmlui.administrative.group.EditGroupForm.collection_para">This group is associated with collection: </message>
-	<message key="xmlui.administrative.group.EditGroupForm.community_para">This group is associated with community: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.collection_para">This group is associated with lesson: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.community_para">This group is associated with department: </message>
 	<message key="xmlui.administrative.group.EditGroupForm.label_name">Change group name: </message>
-	<message key="xmlui.administrative.group.EditGroupForm.label_instructions">This group is associated with a specific collection or community and the name cannot be modified.</message>
+	<message key="xmlui.administrative.group.EditGroupForm.label_instructions">This group is associated with a specific lesson or department and the name cannot be modified.</message>
 	<message key="xmlui.administrative.group.EditGroupForm.label_search">Search members to add: </message>
 	<message key="xmlui.administrative.group.EditGroupForm.submit_search_people">E-People...</message>
 	<message key="xmlui.administrative.group.EditGroupForm.submit_search_groups">Groups...</message>
@@ -1165,7 +1165,7 @@
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column1">ID</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column2">Name</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column3">Members</message>
-	<message key="xmlui.administrative.group.EditGroupForm.groups_column4">Collection</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column4">Lesson</message>
 	<message key="xmlui.administrative.group.EditGroupForm.groups_column5"></message>
 	<message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">view</message>
 	<message key="xmlui.administrative.group.EditGroupForm.members_head">Members</message>
@@ -1293,7 +1293,7 @@
 	<!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.title">Metadata Registry</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Metadata registry</message>
-	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas.  However, DSpace requires the qualified Dublin Core schema. You may extend the Dublin Core schema with additional fields or add new schemas to the registry.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas.  However, OER Hub requires the qualified Dublin Core schema. You may extend the Dublin Core schema with additional fields or add new schemas to the registry.</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1"></message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
 	<message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Namespace</message>
@@ -1336,16 +1336,16 @@
 	<message key="xmlui.administrative.authorization.AuthorizationMain.submit_find">Find</message>
 	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced">Advanced authorizations tool</message>
 	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced_link">Click here to go to the item wildcard policy admin tool</message>
-	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_head">Community/collection authorizations</message>
-	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_para">Click on a community or collection to edit its policies.</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_head">Department/lesson authorizations</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_para">Click on a department or lesson to edit its policies.</message>
 
 
 
 	<!-- org.dspace.app.xmlui.administrative.authorization.EditContainerPolicies -->
 	<message key="xmlui.administrative.authorization.EditContainerPolicies.title">Edit Policies</message>
 	<message key="xmlui.administrative.authorization.EditContainerPolicies.trail">Policies List</message>
-	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_collection">Policies for Collection "{0}" ({1},ID: {2})</message>
-	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_community">Policies for Community "{0}" ({1},ID: {2})</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_collection">Policies for Lesson "{0}" ({1},ID: {2})</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_community">Policies for Department "{0}" ({1},ID: {2})</message>
 	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_add_link">Click here to add a new policy. </message>
 	<message key="xmlui.administrative.authorization.EditContainerPolicies.submit_add">Add</message>
 	<message key="xmlui.administrative.authorization.EditContainerPolicies.head_id">ID</message>
@@ -1408,15 +1408,15 @@
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.title">Advanced Policy Manager</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.trail">Advanced Authorizations</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_head">Advanced Policy Manager</message>
-	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_para">Allows wildcard additions to and clearing of policies for items or bitstreams within specific collection(s). WARNING - removing READ permissions from items will make them not viewable!</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_para">Allows wildcard additions to and clearing of policies for items or bitstreams within specific lesson(s). WARNING - removing READ permissions from items will make them not viewable!</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_groupSentence">For all of the selected groups...</message>
     <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_actionSentence">...grant the ability to perform the following action...</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_resourceSentence">...for all following object types...</message>
-    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_collectionSentence">...across the following collections.</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_collectionSentence">...across the following lessons.</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyGroup">Group</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyAction">Action</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyResource">Content Type</message>
-	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyCollections">Collection</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyCollections">Lesson</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_add">Add policies</message>
 	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_remove_all">Clear policies</message>
     <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.label_date_help">Accepted format: yyyy, yyyy-mm, yyyy-mm-dd</message>
@@ -1428,7 +1428,7 @@
     <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_date_format">Invalid date</message>
     <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_start_date_greater_than_end_date">Start date is greater than end date</message>
     <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_groupIds">Select at least a group</message>
-    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_collectionIds">Select at least a collection</message>
+    <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_collectionIds">Select at least a lesson</message>
 
 	<!-- org.dspace.app.xmlui.administrative.authorization.DeletePoliciesConfirm -->
 	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Confirm Policy Deletion</message>
@@ -1442,10 +1442,10 @@
 
     <!-- Batch Import Tool -->
     <!-- org.dspace.app.xmlui.administrative.batchimport -->
-    <message key="xmlui.administrative.batchimport.general.select_collection">Select a collection</message>
-    <message key="xmlui.administrative.batchimport.general.collection">Collection</message>
-    <message key="xmlui.administrative.batchimport.general.collection_help">Select the collection you wish to submit an item to.</message>
-    <message key="xmlui.administrative.batchimport.general.collection_default">Select a collection...</message>
+    <message key="xmlui.administrative.batchimport.general.select_collection">Select a lesson</message>
+    <message key="xmlui.administrative.batchimport.general.collection">Lesson</message>
+    <message key="xmlui.administrative.batchimport.general.collection_help">Select the lesson you wish to submit an item to.</message>
+    <message key="xmlui.administrative.batchimport.general.collection_default">Select a lesson...</message>
 
     <message key="xmlui.administrative.batchimport.general.title">Import Batch Load (ZIP)</message>
     <message key="xmlui.administrative.batchimport.general.head1">Import Batch Load (ZIP)</message>
@@ -1459,7 +1459,7 @@
     <message key="xmlui.administrative.batchimport.flow.upload_badelement">Unknown metadata element in heading</message>
     <message key="xmlui.administrative.batchimport.flow.import_successful">Import successful</message>
     <message key="xmlui.administrative.batchimport.flow.import_failed">Import failed</message>
-    <message key="xmlui.administrative.batchimport.flow.failed_no_collection">No Destination Collection Specified</message>
+    <message key="xmlui.administrative.batchimport.flow.failed_no_collection">No Destination Lesson Specified</message>
 
     <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportConfirm -->
     <message key="xmlui.administrative.batchimport.BatchmportMain.submit_upload">Upload SimpleArchiveFormat ZIP</message>
@@ -1476,7 +1476,7 @@
 
 	<!-- general edit item messages -->
 	<message key="xmlui.administrative.item.general.item_trail">Items</message>
-	<message key="xmlui.administrative.item.general.template_head">Edit Template Item for Collection: {0}</message>
+	<message key="xmlui.administrative.item.general.template_head">Edit Template Item for Lesson: {0}</message>
 	<message key="xmlui.administrative.item.general.option_head">Edit Item</message>
 	<message key="xmlui.administrative.item.general.option_status">Item Status</message>
 	<message key="xmlui.administrative.item.general.option_bitstreams">Item Bitstreams</message>
@@ -1530,12 +1530,12 @@
 	<message key="xmlui.administrative.item.MoveItemForm.title">Move</message>
 	<message key="xmlui.administrative.item.MoveItemForm.trail">Move</message>
 	<message key="xmlui.administrative.item.MoveItemForm.head1">Move item: {0}</message>
-	<message key="xmlui.administrative.item.MoveItemForm.collection">Collection</message>
-	<message key="xmlui.administrative.item.MoveItemForm.collection_help">Select the collection you wish to move this item to.</message>
-	<message key="xmlui.administrative.item.MoveItemForm.collection_default">Select a collection...</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection">Lesson</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection_help">Select the lesson you wish to move this item to.</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection_default">Select a lesson...</message>
 	<message key="xmlui.administrative.item.MoveItemForm.submit_move">Move</message>
     <message key="xmlui.administrative.item.MoveItemForm.inherit_policies">Inherit policies</message>
-    <message key="xmlui.administrative.item.MoveItemForm.inherit_policies_help">Inherit the default policies of the destination collection</message>
+    <message key="xmlui.administrative.item.MoveItemForm.inherit_policies_help">Inherit the default policies of the destination lesson</message>
 
 	<!-- org.dspace.app.xmlui.administrative.item.EditBitstreamForm -->
 	<message key="xmlui.administrative.item.EditBitstreamForm.title">Edit Bitstream</message>
@@ -1601,12 +1601,12 @@
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_id">Item Internal ID</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_handle">Handle</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_modified">Last Modified</message>
-	<message key="xmlui.administrative.item.EditItemStatusForm.label_in">In Collections</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_in">In Lessons</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_page">Item Page</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_auth">Edit item's authorization policies</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_withdraw">Withdraw item from the repository</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_reinstate">Reinstate item into the repository</message>
-	<message key="xmlui.administrative.item.EditItemStatusForm.label_move">Move item to another collection</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_move">Move item to another lesson</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.label_delete">Completely expunge item</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.submit_authorizations">Authorizations...</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.submit_withdraw">Withdraw...</message>
@@ -1615,7 +1615,7 @@
 	<message key="xmlui.administrative.item.EditItemStatusForm.submit_delete">Permanently delete</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.na">n/a</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.sysadmins_only">(system administrators only)</message>
-	<message key="xmlui.administrative.item.EditItemStatusForm.collection_admins_only">(collection administrators only)</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.collection_admins_only">(lesson administrators only)</message>
 	<message key="xmlui.administrative.item.EditItemStatusForm.not_allowed">(you are not allowed to perform this action)</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_private">Make item private</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_public">Make item public</message>
@@ -1663,10 +1663,10 @@
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.changes_committed">Changes applied to item</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_added">Added: </message>
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_removed">Removed: </message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_newowner">Added to owning collection</message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_oldowner">Removed from owning collection</message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_mapped">Mapped to collection</message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_unmapped">Unmapped from collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_newowner">Added to owning lesson</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_oldowner">Removed from owning lesson</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_mapped">Mapped to lesson</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_unmapped">Unmapped from lesson</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_deleted">Item Expunged</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_withdrawn">Item Withdrawn</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_reinstated">Item Reinstated</message>
@@ -1674,10 +1674,10 @@
         <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportUpload -->
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_add">Add: </message>
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_remove">Remove: </message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_newowner">Add to owning collection</message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_oldowner">Remove from owning collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_newowner">Add to owning lesson</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_oldowner">Remove from owning lesson</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_mapped">Map to collection</message>
-        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_unmapped">Un-map from collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_unmapped">Un-map from lesson</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.changes_pending">Changes pending for item</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.submit_confirm">Apply changes</message>
         <message key="xmlui.administrative.metadataimport.MetadataImportUpload.hint">Pending changes are listed below for review</message>
@@ -1690,15 +1690,15 @@
 
 	<!-- org.dspace.app.xmlui.administrative.mapper.MapperMain -->
 	<message key="xmlui.administrative.mapper.MapperMain.title">Item Mapper</message>
-	<message key="xmlui.administrative.mapper.MapperMain.head1">Item Mapper - Map Items from Other Collections</message>
-	<message key="xmlui.administrative.mapper.MapperMain.para1">Collection: "<strong>{0}</strong>"</message>
-	<message key="xmlui.administrative.mapper.MapperMain.para2">This is the item mapper tool that allows collection administrators to map items from other collections into this collection. You can search for items from other collections and map them, or browse the list of currently mapped items.</message>
+	<message key="xmlui.administrative.mapper.MapperMain.head1">Item Mapper - Map Items from Other Lessons</message>
+	<message key="xmlui.administrative.mapper.MapperMain.para1">Lesson: "<strong>{0}</strong>"</message>
+	<message key="xmlui.administrative.mapper.MapperMain.para2">This is the item mapper tool that allows lesson administrators to map items from other lessons into this lesson. You can search for items from other lessons and map them, or browse the list of currently mapped items.</message>
 	<message key="xmlui.administrative.mapper.MapperMain.stat_label">Statistics</message>
-	<message key="xmlui.administrative.mapper.MapperMain.stat_info"><strong>{0} of {1}</strong> items in this collection are mapped in from other collections</message>
+	<message key="xmlui.administrative.mapper.MapperMain.stat_info"><strong>{0} of {1}</strong> items in this lesson are mapped in from other lessons</message>
 	<message key="xmlui.administrative.mapper.MapperMain.search_label">Search</message>
 	<message key="xmlui.administrative.mapper.MapperMain.submit_search">Search Items</message>
 	<message key="xmlui.administrative.mapper.MapperMain.submit_browse">Browse mapped items</message>
-	<message key="xmlui.administrative.mapper.MapperMain.no_add">(Requires the collection ADD privilege)</message>
+	<message key="xmlui.administrative.mapper.MapperMain.no_add">(Requires the lesson ADD privilege)</message>
 
 	<!-- org.dspace.app.xmlui.administrative.mapper.SearchItemForm -->
 	<message key="xmlui.administrative.mapper.SearchItemForm.title">Search Items</message>
@@ -1706,7 +1706,7 @@
 	<message key="xmlui.administrative.mapper.SearchItemForm.head1">Search items matching: "{0}"</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Map selected items</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column1"></message>
-	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Collection</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Lesson</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column3">Author</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column4">Title</message>
 
@@ -1716,32 +1716,32 @@
 	<message key="xmlui.administrative.mapper.BrowseItemForm.head1">Browsing mapped items</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Unmap selected items</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column1"></message>
-	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Collection</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Lesson</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column3">Author</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column4">Title</message>
-	<message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">You need the REMOVE privilege on this collection to be able to unmap items from this collection.</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">You need the REMOVE privilege on this lesson to be able to unmap items from this lesson.</message>
 
 	<!-- General tags for collection management -->
-	<message key="xmlui.administrative.collection.general.collection_trail">Collections</message>
+	<message key="xmlui.administrative.collection.general.collection_trail">Lesson</message>
 	<message key="xmlui.administrative.collection.general.options_metadata">Edit Metadata</message>
 	<message key="xmlui.administrative.collection.general.options_roles">Assign Roles</message>
         <message key="xmlui.administrative.collection.general.options_curate">Curate</message>
         <message key="xmlui.administrative.collection.general.options_queue">Queue</message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.AssignCollectionRoles.java -->
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.title">Edit Collection Roles</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.title">Edit Lesson Roles</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.trail">Roles</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.main_head">Edit Collection: {0}</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.main_head">Edit Lesson: {0}</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.no_role">none</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.create">Create...</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.restrict">Restrict...</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_admins">Collection administrators decide who can submit items to the collection, edit item metadata (after submission), and add (map) existing items from other collections to this collection (subject to authorization for that collection).</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_admins">Lesson administrators decide who can submit items to the collection, edit item metadata (after submission), and add (map) existing items from other collections to this collection (subject to authorization for that lesson).</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step1">The people responsible for this step are able to accept or reject incoming submissions. However, they are not able to edit the submission's metadata.</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step2">The people responsible for this step are able to edit the metadata of incoming submissions, and then accept or reject them.</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step3">The people responsible for this step are able to edit the metadata of incoming submissions, but will not be able to reject them.</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_submitters">The E-People and Groups that have permission to submit new items to this collection.</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_default_read">E-People and Groups that can read new items submitted to this collection. Changes to this role are not retroactive.  Existing items in the system will still be viewable by those who had read access at the time of their addition.</message>
-	<message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_custom">This collection uses custom default access settings. </message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_submitters">The E-People and Groups that have permission to submit new items to this lesson.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_default_read">E-People and Groups that can read new items submitted to this lesson. Changes to this role are not retroactive.  Existing items in the system will still be viewable by those who had read access at the time of their addition.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_custom">This lesson uses custom default access settings. </message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_anonymous">Default read for incoming items and bitstreams is currently set to Anonymous.</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.edit_authorization">Edit authorization policies directly.</message>
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.role_name">Role</message>
@@ -1759,17 +1759,17 @@
 	<message key="xmlui.administrative.collection.AssignCollectionRoles.not_allowed"><nobr>(you are not allowed to configure this)</nobr></message>
 
         <!-- org.dspace.app.xmlui.administrative.collection.CurateCollectionForm.java -->
-        <message key="xmlui.administrative.collection.CurateCollectionForm.main_head">Curate Collection: {0}</message>
-        <message key="xmlui.administrative.collection.CurateCollectionForm.title">Curate Collection</message>
+        <message key="xmlui.administrative.collection.CurateCollectionForm.main_head">Curate Lesson: {0}</message>
+        <message key="xmlui.administrative.collection.CurateCollectionForm.title">Curate Lesson</message>
         <message key="xmlui.administrative.collection.CurateCollectionForm.trail">Curator</message>
         <message key="xmlui.administrative.collection.CurateCollectionForm.label_name">Task</message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionConfirm.java -->
 	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.title">Confirm Deletion</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.trail">Confirm</message>
-	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Confirm deletion for collection {0}</message>
-	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_para">Are you sure collection {0} should be deleted? This will delete:</message>
-	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Any items and incomplete submissions in this collection that aren't contained in other collections</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Confirm deletion for lesson {0}</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_para">Are you sure lesson {0} should be deleted? This will delete:</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Any items and incomplete submissions in this lesson that aren't contained in other lessons</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item2">The contents of those items</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item3">All associated authorization policies</message>
 
@@ -1777,13 +1777,13 @@
 	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.title">Confirm role deletion</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.trail">Confirm</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_head">Confirm deletion for role {0}</message>
-	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para_read">Are you sure you want to delete this role? Deleting this group will give READ access to all users for all items submitted to this collection from now on. Please note that this change is not retroactive. Existing items in the system will still be restricted to the members defined by the role you are about to delete.</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para_read">Are you sure you want to delete this role? Deleting this group will give READ access to all users for all items submitted to this lesson from now on. Please note that this change is not retroactive. Existing items in the system will still be restricted to the members defined by the role you are about to delete.</message>
 	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para">Are you sure you want to delete this role? All changes and customizations made to the {0} group will be lost and would have to be created anew.</message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.EditCollectionMetadataForm.java -->
-	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.title">Edit Collection Metadata</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.title">Edit Lesson Metadata</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.trail">Metadata</message>
-	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.main_head">Edit Collection: {0}</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.main_head">Edit Lesson: {0}</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_name">Name</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_short_description">Short Description</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_introductory_text">Introductory text (HTML)</message>
@@ -1797,35 +1797,35 @@
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_create_template">Create...</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_edit_template">Edit...</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete_logo">Remove logo</message>
-	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete">Delete collection</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete">Delete lesson</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_save">Save updates</message>
 	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.sysadmins_only"><nobr>(system administrators only)</nobr></message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.CreateCollectionForm.java -->
-	<message key="xmlui.administrative.collection.CreateCollectionForm.title">Create Collection</message>
-	<message key="xmlui.administrative.collection.CreateCollectionForm.trail">Create Collection</message>
-	<message key="xmlui.administrative.collection.CreateCollectionForm.main_head">Enter Metadata for a New Collection of {0}</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.title">Create Lesson</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.trail">Create Lesson</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.main_head">Enter Metadata for a New Lesson of {0}</message>
 	<message key="xmlui.administrative.collection.CreateCollectionForm.submit_save">Create</message>
 
 	<!-- General to the harvesting options under collection -->
-	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.title">Collection Harvesting Settings</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.title">Lesson Harvesting Settings</message>
 	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.trail">Harvesting</message>
 	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.options_harvest">Content Source</message>
 	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.label_source">Content source</message>
-	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">This is a standard DSpace collection</message>
-	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_harvested">This collection harvests its content from an external source</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">This is a standard OER Hub lesson</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_harvested">This lesson harvests its content from an external source</message>
 	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.submit_save">Save</message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.SetupCollectionHarvestingForm.java -->
-	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.main_settings_head">Harvested Collection Location</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.main_settings_head">Harvested Lesson Location</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.options_head">Harvesting Options</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_oai_provider">OAI Provider</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_setid">OAI Set id</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_metadata_format">Metadata Format</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaiurl">The url of the target repository's OAI provider service</message>
-	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaiurl">You must provide a set id of the target collection.</message>
-	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaisetid">The persistent identifier used by the OAI provider to designate the target collection</message>
-	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaisetid">You must provide a set id of the target collection.</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaiurl">You must provide a set id of the target lesson.</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaisetid">The persistent identifier used by the OAI provider to designate the target lesson</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaisetid">You must provide a set id of the target lesson.</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_harvest_level">Content being harvested</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_only">Harvest metadata only.</message>
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_and_ref">Harvest metadata and references to bitstreams (requires ORE support).</message>
@@ -1833,17 +1833,17 @@
 	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.submit_test">Test Settings</message>
 
 	<!-- org.dspace.app.xmlui.administrative.collection.EditCollectionHarvestingForm.java -->
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.main_settings_head">Harvested Collection Location</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.main_settings_head">Harvested Lesson Location</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_oai_provider">OAI Provider</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_setid">OAI Set id</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_metadata_format">Metadata format</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_level">Content being harvested</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_result">Last Harvest Result</message>
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_result_new">This collection has not yet been harvested.</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_result_new">This lesson has not yet been harvested.</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_status">Current harvest status</message>
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_ready">Collection ready for harvest</message>
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_busy">Collection is currently being harvested</message>
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_queued">Collection is in queue for harvest</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_ready">Lesson ready for harvest</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_busy">Lesson is currently being harvested</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_queued">Lesson is in queue for harvest</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_oai_error">OAI error occurred during last harvest</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_unknown_error">Unexpected error occurred during last harvest</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.option_md_only">Harvest metadata only.</message>
@@ -1851,7 +1851,7 @@
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.option_md_and_bs">Harvest metadata and bitstreams (full replication).</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_change_settings">Change Settings</message>
 	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_import_now">Import Now</message>
-	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_reimport_collection">Reset and Reimport Collection</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_reimport_collection">Reset and Reimport Lesson</message>
 
 	<message key="xmlui.administrative.ControlPanel.option_harvest">Harvesting</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_scheduler_head">Harvest Scheduler Controls</message>
@@ -1863,7 +1863,7 @@
 	<message key="xmlui.administrative.ControlPanel.harvest_submit_resume">Resume</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_submit_pause">Pause</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_submit_stop">Stop</message>
-	<message key="xmlui.administrative.ControlPanel.harvest_label_collections">Collections set up for harvesting</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_collections">Lessons set up for harvesting</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_label_active">Active harvests</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_label_queued">Queued harvests</message>
 	<message key="xmlui.administrative.ControlPanel.harvest_label_oai_errors">OAI errors</message>
@@ -1874,20 +1874,20 @@
 	<message key="xmlui.administrative.ControlPanel.harvest_head_harvester_settings">Harvester Settings</message>
 
 	<!-- General tags for community management -->
-	<message key="xmlui.administrative.community.general.community_trail">Communities</message>
+	<message key="xmlui.administrative.community.general.community_trail">Departments</message>
 	<message key="xmlui.administrative.community.general.options_metadata">Edit Metadata</message>
 	<message key="xmlui.administrative.community.general.options_roles">Assign Roles</message>
         <message key="xmlui.administrative.community.general.options_curate">Curate</message>
         <message key="xmlui.administrative.community.general.options_queue">Queue</message>
 
 	<!-- org.dspace.app.xmlui.administrative.community.AssignCommunityRoles.java -->
-	<message key="xmlui.administrative.community.AssignCommunityRoles.title">Edit Community Roles</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.title">Edit Department Roles</message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.trail">Roles</message>
-	<message key="xmlui.administrative.community.AssignCommunityRoles.main_head">Edit Community: {0}</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.main_head">Edit Department: {0}</message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.no_role">none</message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.create">Create...</message>
-	<message key="xmlui.administrative.community.AssignCommunityRoles.help_admins">Community administrators can create sub-communities or collections, and manage or assign management for those sub-communities or collections.  In addition, they decide who can submit items to any sub-collections, edit item metadata (after submission), and add (map) existing items from other collections (subject to authorization).</message>
-	<message key="xmlui.administrative.community.AssignCommunityRoles.default_read_custom">This community uses custom default access settings. </message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.help_admins">Department administrators can create Courses or Lessons, and manage or assign management for those courses or lessons.  In addition, they decide who can submit items to any sub-lessons, edit item metadata (after submission), and add (map) existing items from other lessons (subject to authorization).</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.default_read_custom">This department uses custom default access settings. </message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.default_read_anonymous">Default read for incoming items and bitstreams is currently set to Anonymous.</message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.edit_authorizations">Edit authorization policies directly.</message>
 	<message key="xmlui.administrative.community.AssignCommunityRoles.role_name">Role</message>
@@ -1897,18 +1897,18 @@
 	<message key="xmlui.administrative.community.AssignCommunityRoles.sysadmins_only"><nobr>(system administrators only)</nobr></message>
 
         <!-- org.dspace.app.xmlui.administrative.community.CurateCommunityForm.java -->
-        <message key="xmlui.administrative.community.CurateCommunityForm.main_head">Curate Community: {0}</message>
-        <message key="xmlui.administrative.community.CurateCommunityForm.title">Curate Community</message>
+        <message key="xmlui.administrative.community.CurateCommunityForm.main_head">Curate Department: {0}</message>
+        <message key="xmlui.administrative.community.CurateCommunityForm.title">Curate Department</message>
         <message key="xmlui.administrative.community.CurateCommunityForm.trail">Curator</message>
         <message key="xmlui.administrative.community.CurateCommunityForm.label_name">Task</message>
 
 	<!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityConfirm.java -->
 	<message key="xmlui.administrative.community.DeleteCommunityConfirm.title">Confirm Deletion</message>
 	<message key="xmlui.administrative.community.DeleteCommunityConfirm.trail">Confirm</message>
-	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Confirm deletion for community {0}</message>
-	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_para">Are you sure community {0} should be deleted? This will delete:</message>
-	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item1">Any collections in the community that are not contained in other communities</message>
-	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Any items and incomplete submissions in this community that aren't contained in other communities</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Confirm deletion for department {0}</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_para">Are you sure department {0} should be deleted? This will delete:</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item1">Any collections in the department that are not contained in other departments</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Any items and incomplete submissions in this department that aren't contained in other departments</message>
 	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item3">The contents of those items</message>
 	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item4">All associated authorization policies</message>
 
@@ -1919,9 +1919,9 @@
 	<message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.main_para">Are you sure you want to delete this role? All changes and customizations made to the {0} group will be lost and would have to be created anew.</message>
 
 	<!-- org.dspace.app.xmlui.administrative.community.EditCommunityMetadataForm.java -->
-	<message key="xmlui.administrative.community.EditCommunityMetadataForm.title">Edit Community Metadata</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.title">Edit Department Metadata</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.trail">Metadata</message>
-	<message key="xmlui.administrative.community.EditCommunityMetadataForm.main_head">Edit Metadata for Community {0}</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.main_head">Edit Metadata for Department {0}</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.edit_authorizations">Edit authorization policies</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_name">Name</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_short_description">Short Description</message>
@@ -1931,13 +1931,13 @@
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_logo">Upload new logo</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_existing_logo">Current logo</message>
 	<message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete_logo">Remove logo</message>
-	<message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete">Delete community</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete">Delete department</message>
 
 	<!-- org.dspace.app.xmlui.administrative.community.CreateCommunityForm.java -->
-	<message key="xmlui.administrative.community.CreateCommunityForm.title">Create Community</message>
-	<message key="xmlui.administrative.community.CreateCommunityForm.trail">Create Community</message>
-	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_sub">Enter Metadata for a New Sub-Community of {0}</message>
-	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_top">Edit Metadata for a New Top-Level Community</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.title">Create Department</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.trail">Create Department</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_sub">Enter Metadata for a New Course of {0}</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_top">Edit Metadata for a New Top-Level Department</message>
 	<message key="xmlui.administrative.community.CreateCommunityForm.submit_save">Create</message>
 
 
@@ -1946,7 +1946,7 @@
 	<message key="xmlui.administrative.ControlPanel.trail">Control panel</message>
 	<message key="xmlui.administrative.ControlPanel.head">Control Panel</message>
 	<message key="xmlui.administrative.ControlPanel.option_java">Java Information</message>
-	<message key="xmlui.administrative.ControlPanel.option_dspace">DSpace Configuration</message>
+	<message key="xmlui.administrative.ControlPanel.option_dspace">OER Hub Configuration</message>
 	<message key="xmlui.administrative.ControlPanel.option_alerts">System-wide Alerts</message>
 	<message key="xmlui.administrative.ControlPanel.hours">{0} h</message>
 	<message key="xmlui.administrative.ControlPanel.minutes">{0} m</message>
@@ -1971,11 +1971,11 @@
         <message key="xmlui.administrative.ControlPanel.cocoon_cache_clear">(Clear Cache Immediately)</message>
         <message key="xmlui.administrative.ControlPanel.cocoon_persistent_cache_size">Persistent Cache Size ({0})</message>
         <message key="xmlui.administrative.ControlPanel.cocoon_transient_cache_size">Transient Cache Size ({0})</message>
-	<message key="xmlui.administrative.ControlPanel.dspace_head">DSpace Settings</message>
-        <message key="xmlui.administrative.ControlPanel.dspace_version">DSpace Version</message>
-	<message key="xmlui.administrative.ControlPanel.dspace_dir">DSpace Installation Directory</message>
-	<message key="xmlui.administrative.ControlPanel.dspace_url">DSpace Base URL</message>
-	<message key="xmlui.administrative.ControlPanel.dspace_hostname">DSpace Host Name</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_head">OER Hub Settings</message>
+        <message key="xmlui.administrative.ControlPanel.dspace_version">OER Hub Version</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_dir">OER Hub Installation Directory</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_url">OER Hub Base URL</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_hostname">OER Hub Host Name</message>
 	<message key="xmlui.administrative.ControlPanel.dspace_name">Name of the Site</message>
 	<message key="xmlui.administrative.ControlPanel.db_name">Database Name</message>
 	<message key="xmlui.administrative.ControlPanel.db_url">Database URL</message>
@@ -2047,7 +2047,7 @@
         <!-- System-wide Curation Tasks form (org.dspace.app.xmlui.aspect.administrative.CurateForm) -->
         <message key="xmlui.administrative.CurateForm.title">System Curation Tasks</message>
         <message key="xmlui.administrative.CurateForm.trail">Curation Tasks</message>
-        <message key="xmlui.administrative.CurateForm.object_label_name">Handle of DSpace Object</message>
+        <message key="xmlui.administrative.CurateForm.object_label_name">Handle of OER Hub Object</message>
         <message key="xmlui.administrative.CurateForm.object_hint">Hint: Enter [your-handle-prefix]/0 to run a task across entire site (not all tasks may support this capability)</message>
         <message key="xmlui.administrative.CurateForm.task_label_name">Task</message>
     <!-- Used by Curate<DSO>Form classes also -->
@@ -2157,7 +2157,7 @@
 			<span id="ds-footer-logo">&#160;</span>
 		</a>
 		<p>
-			This website is using Manakin, a new front end for DSpace created by Texas A&amp;M University
+			This website is using Manakin, a new front end for OER Hub created by Texas A&amp;M University
 			Libraries. The interface can be extensively modified through Manakin Aspects and XSL based Themes.
 			For more information visit
 			<a href="http://di.tamu.edu">http://di.tamu.edu</a> and
@@ -2167,16 +2167,16 @@
 	<message key="xmlui.dri2xhtml.structural.contact-link">Contact Us</message>
 	<message key="xmlui.dri2xhtml.structural.feedback-link">Send Feedback</message>
 
-	<message key="xmlui.dri2xhtml.structural.head-subtitle">DSpace Repository</message>
+	<message key="xmlui.dri2xhtml.structural.head-subtitle">OER Hub Repository</message>
 
 	<message key="xmlui.dri2xhtml.structural.profile">Profile: </message>
 	<message key="xmlui.dri2xhtml.structural.logout">Logout</message>
 	<message key="xmlui.dri2xhtml.structural.login">Login</message>
 
-	<message key="xmlui.dri2xhtml.structural.search">Search DSpace</message>
+	<message key="xmlui.dri2xhtml.structural.search">Search OER Hub</message>
 	<message key="xmlui.dri2xhtml.structural.search-advanced">Advanced Search</message>
-	<message key="xmlui.dri2xhtml.structural.search-in-community">This Community</message>
-	<message key="xmlui.dri2xhtml.structural.search-in-collection">This Collection</message>
+	<message key="xmlui.dri2xhtml.structural.search-in-community">This Department</message>
+	<message key="xmlui.dri2xhtml.structural.search-in-collection">This Lesson</message>
 
 	<message key="xmlui.dri2xhtml.structural.pagination-previous">Previous Page</message>
 	<message key="xmlui.dri2xhtml.structural.pagination-info">Now showing items {0}-{1} of {2}</message>
@@ -2193,7 +2193,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.no-title">Untitled</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.no-author">Unknown author</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.non-conformant">
-		This is not a DSpace object conformant to the METS 1.0 profile and as such cannot be
+		This is not a OER Hub object conformant to the METS 1.0 profile and as such cannot be
         rendered effectively. You can override either the template that handles the general
         case in dri2xhtml to perform the needed function, or create your template to match
         whatever profile you use.
@@ -2228,25 +2228,25 @@
     <message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Except where otherwise noted, this item's license is described as </message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.collection-not-implemented">
-		The summaryView of a collection is not currently used or implemented. This can be fixed
+		The summaryView of a lesson is not currently used or implemented. This can be fixed
 		by overriding the dri2xhtml's template named collectionSummaryView.
 	</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.community-not-implemented">
-		The summaryView of a community is not currently used or implemented. This can be fixed
+		The summaryView of a department is not currently used or implemented. This can be fixed
 		by overriding the dri2xhtml's template named communitySummaryView.
 	</message>
 
-	<message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">The collection's logo</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">The community's logo</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">The lesson's logo</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">The department's logo</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.no-logo-alt">No logo</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.news">News</message>
 
 	<!-- Internationalization elements specific to the Qualified Dublin Core metadata handler.
 		DS-METS-1.0-QDC.xsl -->
 	<message key="xmlui.dri2xhtml.METS-1.0.qdc-not-applicable">
-		Qualified Dublin Core (QDC) is not applicable to DSpace communities and collections at
-		this time. When using QDC, you should use the QDC crosswalk for DSpace items and either
-		DIM or MODS for processing of communities and collections.
+		Qualified Dublin Core (QDC) is not applicable to OER Hub departments and lessons at
+		this time. When using QDC, you should use the QDC crosswalk for OER Hub items and either
+		DIM or MODS for processing of departments and lessons.
 	</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Dublin Core elements</message>
@@ -2357,7 +2357,7 @@
      - JavaScript (AJAX) that completes the lookup popup window.
      - So, positional parameters are @1@, @2@, etc.
     -->
-  <message key="xmlui.ChoiceLookupTransformer.title">DSpace Value Lookup</message>
+  <message key="xmlui.ChoiceLookupTransformer.title">OER Hub Value Lookup</message>
   <message key="xmlui.ChoiceLookupTransformer.accept">Accept</message>
   <message key="xmlui.ChoiceLookupTransformer.add">Add</message>
   <message key="xmlui.ChoiceLookupTransformer.cancel">Cancel</message>
@@ -2381,7 +2381,7 @@
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.nonauthority">Local value "@1@" (not in Naming Authority)</message>
 
   <!-- mobile theme -->
-  <message key="xmlui.mobile.home_mobile">DSpace Mobile</message>
+  <message key="xmlui.mobile.home_mobile">OER Hub Mobile</message>
   <message key="xmlui.mobile.search_all">Search ALL</message>
   <message key="xmlui.mobile.browse_all">Browse ALL by</message>
   <message key="xmlui.mobile.browse_date">Date</message>

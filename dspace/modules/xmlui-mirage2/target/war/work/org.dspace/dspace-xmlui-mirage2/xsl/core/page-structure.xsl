@@ -157,7 +157,7 @@
             <link rel="shortcut icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="$theme-path"/>
-                    <xsl:text>images/favicon.ico</xsl:text>
+                    <xsl:text>images/iitblogo2.jpg</xsl:text>
                 </xsl:attribute>
             </link>
             <link rel="apple-touch-icon">
@@ -344,7 +344,7 @@
                         </button>
 
                         <a href="{$context-path}/" class="navbar-brand">
-                            <img src="{$theme-path}/images/DSpace-logo-line.svg" />
+                            <img src="{$theme-path}/images/iitblogo2.jpg" height="30" width="30" />
                         </a>
 
 
@@ -703,7 +703,7 @@
                     <hr/>
                     <div class="col-xs-7 col-sm-8">
                         <div>
-                            <a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2016&#160; <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+                            <a href="http://www.dspace.org" target="_blank">DSpace 6.0</a> | OER Hub copyright&#160;&#169;&#160;&#160; <a href="http://iitb.ac.in" target="_blank">IIT Bombay</a>
                         </div>
                         <div class="hidden-print">
                             <a>
@@ -729,8 +729,8 @@
                         <div class="pull-right">
                             <span class="theme-by">Theme by&#160;</span>
                             <br/>
-                            <a title="Atmire NV" target="_blank" href="http://atmire.com">
-                                <img alt="Atmire NV" src="{concat($theme-path, '/images/atmire-logo-small.svg')}"/>
+                            <a title="IITB" target="_blank" href="http://iitb.ac.in">
+                                <img alt="IITB" src="{concat($theme-path, '/images/iitbname.png')}"/>
                             </a>
                         </div>
 

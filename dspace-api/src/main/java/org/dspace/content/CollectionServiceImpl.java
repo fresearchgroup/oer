@@ -611,7 +611,7 @@ public class CollectionServiceImpl extends DSpaceObjectServiceImpl<Collection> i
 
     @Override
     public boolean canEditBoolean(Context context, Collection collection, boolean useInheritance) throws SQLException {
-        try
+       /* try
         {
             canEdit(context, collection, useInheritance);
 
@@ -620,7 +620,19 @@ public class CollectionServiceImpl extends DSpaceObjectServiceImpl<Collection> i
         catch (AuthorizeException e)
         {
             return false;
-        }
+        }*/
+
+		    try
+        {
+         if(authorizeService.isAdmin(context,collection))
+         return true;
+            }
+                catch(SQLException e)
+         { return false;
+}
+            
+           return false;
+
     }
 
     @Override
