@@ -276,10 +276,10 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
                 }
                 
             }
-            DSpaceObject parnt=community;//vaibhav
+            DSpaceObject parnt=community;//modified
    try
 {
-         parnt=authorizeService.getparent(this.context,community); //vaibhav
+         parnt=authorizeService.getparent(this.context,community); //modified
 }
  catch(SQLException e)
 {}

@@ -40,15 +40,7 @@
     <xsl:output indent="yes"/>
 
     <xsl:template name="itemSummaryView-DIM">
-	<xsl:if test="(./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='application/pdf'])">
-	<xsl:variable name="a" select="./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='application/pdf']/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
-  <xsl:variable name="len" select="string-length($a)"/>
-	<xsl:variable name="pv" select="substring($a,1,(($len)-23))"/>
-	<xsl:variable name="pdfv" select="concat('http://10.129.26.56' , $pv)"/>
-	<embed src="{$pdfv}" width="800" height="550" type='application/pdf' />
-                     
-                 </xsl:if>
-
+	
 
 
 	<!-- V.T. Add HTML for the video in a videojs frame -->
