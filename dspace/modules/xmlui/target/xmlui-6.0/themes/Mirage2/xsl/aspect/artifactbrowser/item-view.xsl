@@ -40,7 +40,33 @@
     <xsl:output indent="yes"/>
 
     <xsl:template name="itemSummaryView-DIM">
+	<!-- Image plugin -->
+	<xsl:if test="(./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='image/jpeg'])"  >
+	<xsl:variable name="imge" select="./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='image/jpeg']/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
 	
+	<div>
+	<img src="{$imge}" id="image" alt="Picture"/>
+	</div>	
+</xsl:if>
+<!-- audio plugin -->
+
+<xsl:if test="(./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='audio/x-wav'])"  >
+	<xsl:variable name="aud" select="./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='audio/x-wav']/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
+	<div>
+	<audio	src="{$aud}" controls="controls">
+	</audio>
+	</div>
+</xsl:if>
+
+<!-- pdf plugin -->
+	<xsl:if test="(./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='application/pdf'])">
+	<xsl:variable name="a" select="./mets:fileSec/mets:fileGrp[@USE='CONTENT']/mets:file[@MIMETYPE='application/pdf']/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
+  <xsl:variable name="len" select="string-length($a)"/>
+	<xsl:variable name="pv" select="substring($a,1,(($len)-23))"/>
+	<xsl:variable name="pdfv" select="concat('http://10.129.26.10' , $pv)"/>
+<xsl:variable name="ff" select="concat($theme-path, 'vendor/pdfjs/web/viewer.html?file=')" /> 
+	 <iframe src="{concat($ff, $a)}" width="800" height="800"></iframe> 
+</xsl:if>
 
 
 	<!-- V.T. Add HTML for the video in a videojs frame -->
