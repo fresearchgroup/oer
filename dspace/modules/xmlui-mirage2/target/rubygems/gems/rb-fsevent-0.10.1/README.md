@@ -7,8 +7,8 @@ Very simple & usable Mac OSX FSEvents API
 
 * RubyCocoa not required!
 * Signals are working (really)
-* Tested on MRI 2.1, RBX 2.5, JRuby
-* Tested on 10.10
+* Tested on MRI 2.4.1, RBX 3.72, JRuby 1.7.26 and 9.1.8.0
+* Tested on 10.8
 
 ## HFS+ filename corruption bug
 
@@ -131,6 +131,23 @@ end
 fsevent.run
 ```
 
+### Using _full_ event information
+
+```ruby
+require 'rb-fsevent'
+fsevent = FSEvent.new
+fsevent.watch Dir.pwd do |paths, event_meta|
+  event_meta.events.each do |event|
+    puts "event ID: #{event.id}"
+    puts "path: #{event.path}"
+    puts "c flags: #{event.cflags}"
+    puts "named flags: #{event.flags.join(', ')}"
+    # named flags will include strings such as `ItemInodeMetaMod` or `OwnEvent`
+  end
+end
+fsevent.run
+```
+
 ## Options
 
 When defining options using a hash or hash-like object, it gets checked for validity and converted to the appropriate fsevent\_watch commandline arguments array when the FSEvent class is instantiated. This is obviously the safest and preferred method of passing in options.
@@ -233,7 +250,7 @@ Pull requests are quite welcome! Please ensure that your commits are in a topic 
 
 The list of tested targets is currently:
 
-    %w[2.2.2 2.3.0-dev rbx-2.5.5 jruby-1.7.9]
+    %w[2.4.1 rbx-3.72 jruby-1.7.26 jruby-9.1.8.0]
 
 ## Authors
 
