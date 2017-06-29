@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
 
+require 'otnetstring'
+
 class FSEvent
   class << self
     class_eval <<-END
@@ -40,10 +42,37 @@ class FSEvent
     # please note the use of IO::select() here, as it is used specifically to
     # preserve correct signal handling behavior in ruby 1.8.
     while @running && IO::select([@pipe], nil, nil, nil)
-      if line = @pipe.readline
-        modified_dir_paths = line.split(':').select { |dir| dir != "\n" }
-        callback.call(modified_dir_paths)
+      # managing the IO ourselves allows us to be careful and never pass an
+      # incomplete message to OTNetstring.parse()
+      message = ""
+      length = ""
+      byte = nil
+
+      reading_length = true
+      found_length = false
+
+      while reading_length
+        byte = @pipe.read(1)
+        if "#{byte}" =~ /\d/
+          length << byte
+          found_length = true
+        elsif found_length == false
+          next
+        else
+          reading_length = false
+        end
       end
+      length = Integer(length, 10)
+      type = byte
+
+      message << "#{length}#{type}"
+      message << @pipe.read(length)
+
+      decoded = OTNetstring.parse(message)
+      modified_paths = decoded["events"].map {|event| event["path"]}
+      # passing the full info as a second block param feels icky, but such is
+      # the trap of backward compatibility.
+      callback.call(modified_paths, decoded)
     end
   rescue Interrupt, IOError, Errno::EBADF
   ensure
@@ -110,7 +139,7 @@ class FSEvent
   private
 
   def parse_options(options={})
-    opts = []
+    opts = ['--format=otnetstring']
     opts.concat(['--since-when', options[:since_when]]) if options[:since_when]
     opts.concat(['--latency', options[:latency]]) if options[:latency]
     opts.push('--no-defer') if options[:no_defer]

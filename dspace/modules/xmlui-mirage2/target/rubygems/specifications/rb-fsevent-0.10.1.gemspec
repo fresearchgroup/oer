@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
-# stub: rb-fsevent 0.9.8 ruby lib
+# stub: rb-fsevent 0.10.1 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "rb-fsevent"
-  s.version = "0.9.8"
+  s.version = "0.10.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Thibaud Guillaume-Gentil", "Travis Tilley"]
-  s.date = "2016-10-24"
+  s.date = "2017-06-29"
   s.description = "FSEvents API with Signals catching (without RubyCocoa)"
   s.email = ["thibaud@thibaud.gg", "ttilley@gmail.com"]
   s.homepage = "http://rubygems.org/gems/rb-fsevent"
@@ -21,16 +21,19 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.11"])
+      s.add_development_dependency(%q<rspec>, ["~> 3.6"])
       s.add_development_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_development_dependency(%q<rake>, ["~> 12.0"])
     else
       s.add_dependency(%q<bundler>, ["~> 1.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.11"])
+      s.add_dependency(%q<rspec>, ["~> 3.6"])
       s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_dependency(%q<rake>, ["~> 12.0"])
     end
   else
     s.add_dependency(%q<bundler>, ["~> 1.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.11"])
+    s.add_dependency(%q<rspec>, ["~> 3.6"])
     s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+    s.add_dependency(%q<rake>, ["~> 12.0"])
   end
 end

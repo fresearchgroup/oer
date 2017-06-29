@@ -875,7 +875,7 @@
                     <hr/>
                     <div class="col-xs-7 col-sm-8">
                         <div>
-                            <a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2016&#160; <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+                            <a href="http://www.dspace.org/" target="_blank">DSpace 6.0</a> | OER Hub copyright&#160;&#169;&#160;&#160;<a href="http://iitb.ac.in" target="_blank">IIT Bombay</a>
                         </div>
                         <div class="hidden-print">
                             <a>
@@ -899,10 +899,10 @@
                     </div>
                     <div class="col-xs-5 col-sm-4 hidden-print">
                         <div class="pull-right">
-                            <span class="theme-by">Theme by&#160;</span>
-                            <br/>
-                            <a title="Atmire NV" target="_blank" href="http://atmire.com">
-                                <img alt="Atmire NV" src="{concat($theme-path, '/images/atmire-logo-small.svg')}"/>
+                            <!-- <span class="theme-by">Theme by&#160;</span>
+                            <br/> -->
+                            <a title="IIT Bombay" target="_blank" href="http://iitb.ac.in">
+                                <img alt="IIT Bombay" src="{concat($theme-path, '/images/iitbname.png')}" style="height:60px; width:147px;" hspace="20"/>
                             </a>
                         </div>
 
