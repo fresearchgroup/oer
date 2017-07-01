@@ -157,7 +157,7 @@
             <link rel="shortcut icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="$theme-path"/>
-                    <xsl:text>images/favicon.ico</xsl:text>
+                    <xsl:text>images/iitblogo2.jpg</xsl:text> //harsh
                 </xsl:attribute>
             </link>
             <link rel="apple-touch-icon">
