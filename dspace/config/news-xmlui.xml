@@ -3,6 +3,7 @@
 <body>
 <div id="file.news.div.news" n="news" rend="primary">
 <head>OER Hub</head>
+<figure source="./static/images/books.jpg"/>
 <p>OER Hub (where, OER stands for Open Educational Resources) is a platform created for the free and easy access to educational digital material across the globe. The resources available on this platform comprises of thousands of course videos, books, articles etc. This Hub is an attempt to spread knowledge unequivocally to a wider audience, reaching uncharted territories and thereby bringing the world closer together.</p>
 </div>
 </body>
