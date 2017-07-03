@@ -114,7 +114,10 @@
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Subject</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Subject</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued.year">Date Issued</message>
-
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language">Language</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.learningResourceType">Learning Resource type</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.context">Context</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type">Type</message>
 
     <message key="xmlui.Discovery.AbstractSearch.startswith">Starts with</message>
     <message key="xmlui.Discovery.AbstractSearch.startswith.help">Or enter first few letters:</message>
