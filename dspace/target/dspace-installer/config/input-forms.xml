@@ -48,7 +48,6 @@
          <hint>Enter the names of the authors of this item.</hint>
          <required></required>
        </field>
-
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>title</dc-element>
@@ -84,39 +83,7 @@
          <required>You must enter at least the year.</required>
        </field>
 
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Publisher</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>citation</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Citation</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the standard citation for the previously issued instance of this item.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartofseries</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Series/Report No.</label>
-         <input-type>series</input-type>
-         <hint>Enter the series and number assigned to this item by your community.</hint>
-         <required></required>
-       </field>
-
+       
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>identifier</dc-element>
@@ -129,7 +96,61 @@
 it, please enter the types and the actual numbers or codes.</hint>
          <required></required>
        </field>
-
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>difficulty</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <repeatable></repeatable>
+         <label>Difficulty Level</label>
+         <input-type value-pairs-name="difficulty_level">dropdown</input-type>
+         <hint>Choose the difficulty level of the item</hint>
+         <required></required>
+       </field>
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>interactivityType</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <repeatable></repeatable>
+         <label>Interactivity Type</label>
+         <input-type value-pairs-name="interactivity_type">dropdown</input-type>
+         <hint>Choose the type of interactivity of the item</hint>
+         <required></required>
+       </field>
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>IntendedEndUserRole</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <repeatable></repeatable>
+         <label>Intended end user role</label>
+         <input-type value-pairs-name="user_role">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+       <field>
+       <dc-schema>dc</dc-schema>
+        <dc-element>learningResourceType</dc-element>
+        <dc-qualifier></dc-qualifier>
+        <repeatable>false</repeatable>
+        <label>Learning Resource Type</label>
+        <input-type value-pairs-name="learning_resource_type">dropdown</input-type>
+        <hint> Choose the type of Learning Resource Type</hint>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>context</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <repeatable></repeatable>
+         <label>Context</label>
+         <input-type value-pairs-name="context">dropdown</input-type>
+         <hint>Choose the domain</hint>
+         <required></required>
+       </field>
+       
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>type</dc-element>
@@ -140,11 +161,21 @@ it, please enter the types and the actual numbers or codes.</hint>
          <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
          <required></required>
        </field>
+       <field>
+       <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Format</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the format of item submitted</hint>
+         <required></required>
+       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>language</dc-element>
-         <dc-qualifier>iso</dc-qualifier>
+         <dc-qualifier></dc-qualifier>
          <repeatable>false</repeatable>
          <label>Language</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
@@ -165,6 +196,47 @@ it, please enter the types and the actual numbers or codes.</hint>
          <hint>Enter appropriate subject keywords or phrases. </hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
+       </field>
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Publisher</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+         <required></required>
+       </field>
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>typicalLearningTime</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Typical Learning Time</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the typical learning time required.</hint>
+         <required></required>
+       </field>
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>citation</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Citation</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the standard citation for the previously issued instance of this item.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Series/Report No.</label>
+         <input-type>series</input-type>
+         <hint>Enter the series and number assigned to this item by your community.</hint>
+         <required></required>
        </field>
 
        <field>
@@ -233,6 +305,218 @@ it, please enter the types and the actual numbers or codes.</hint>
  <!-- stores the associated stored-values in the database.                  -->
 
  <form-value-pairs>
+    <value-pairs value-pairs-name="learning_resource_type" dc-term="learningResourceType">
+     <pair>
+        <displayed-value>Exercise</displayed-value>
+        <stored-value>exercise</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Simulation</displayed-value>
+        <stored-value>simulation</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Questionnare</displayed-value>
+        <stored-value>questionnare</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Diagran</displayed-value>
+        <stored-value>diagram</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Figure</displayed-value>
+        <stored-value>figure</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Graph</displayed-value>
+        <stored-value>graph</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Index</displayed-value>
+        <stored-value>index</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Slide</displayed-value>
+        <stored-value>slide</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Table</displayed-value>
+        <stored-value>table</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Narrative Text</displayed-value>
+        <stored-value>narrativeText</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Exam</displayed-value>
+        <stored-value>exam</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Experiment</displayed-value>
+        <stored-value>experiment</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Problem Statement</displayed-value>
+        <stored-value>problemStatement</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Self Assessment</displayed-value>
+        <stored-value>selfAssessment</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Lecture</displayed-value>
+        <stored-value>lecture</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>E-tutorial</displayed-value>
+        <stored-value>eTutorial</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>E-text</displayed-value>
+        <stored-value>eText</stored-value>
+     </pair>
+   </value-pairs>
+    <value-pairs value-pairs-name="context" dc-term="context">
+   <pair>
+     <displayed-value>School</displayed-value>
+     <stored-value>school</stored-value> 
+   </pair>
+   <pair>
+     <displayed-value>Higher Education</displayed-value>
+     <stored-value>higherEducation</stored-value> 
+   </pair>
+   <pair>
+     <displayed-value>Training</displayed-value>
+     <stored-value>Training</stored-value> 
+   </pair>
+   <pair>
+     <displayed-value>Other</displayed-value>
+     <stored-value>Other</stored-value> 
+   </pair>
+   </value-pairs>
+    <value-pairs value-pairs-name="difficulty_level" dc-term="difficulty">
+   <pair>
+       <displayed-value>Very Easy</displayed-value>
+       <stored-value>veryEasy</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Easy</displayed-value>
+       <stored-value>easy</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Medium</displayed-value>
+       <stored-value>Medium</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Difficult</displayed-value>
+       <stored-value>Difficult</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Very Difficult</displayed-value>
+       <stored-value>Very Difficult</stored-value>
+   </pair>
+   </value-pairs>
+   <value-pairs value-pairs-name="learning_resource_type" dc-term="learningResourceType">
+     <pair>
+        <displayed-value>Exercise</displayed-value>
+        <stored-value>exercise</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Simulation</displayed-value>
+        <stored-value>simulation</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Questionnare</displayed-value>
+        <stored-value>questionnare</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Diagran</displayed-value>
+        <stored-value>diagram</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Figure</displayed-value>
+        <stored-value>figure</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Graph</displayed-value>
+        <stored-value>graph</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Index</displayed-value>
+        <stored-value>index</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Slide</displayed-value>
+        <stored-value>slide</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Table</displayed-value>
+        <stored-value>table</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Narrative Text</displayed-value>
+        <stored-value>narrativeText</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Exam</displayed-value>
+        <stored-value>exam</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Experiment</displayed-value>
+        <stored-value>experiment</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Problem Statement</displayed-value>
+        <stored-value>problemStatement</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Self Assessment</displayed-value>
+        <stored-value>selfAssessment</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>Lecture</displayed-value>
+        <stored-value>lecture</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>E-tutorial</displayed-value>
+        <stored-value>eTutorial</stored-value>
+     </pair>
+     <pair>
+        <displayed-value>E-text</displayed-value>
+        <stored-value>eText</stored-value>
+     </pair>
+   </value-pairs>
+   <value-pairs value-pairs-name="interactivity_type" dc-term="interactivityType">
+   <pair>
+       <displayed-value>Active</displayed-value>
+       <stored-value>active</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Expositive</displayed-value>
+       <stored-value>expositive</stored-value>
+   </pair>
+   <pair>
+       <displayed-value>Mixed</displayed-value>
+       <stored-value>mixed</stored-value>
+   </pair>
+   </value-pairs>
+   <value-pairs value-pairs-name="user_role" dc-term="IntendedEndUserRole">
+    <pair>
+      <displayed-value>Teacher</displayed-value>
+      <stored-value>teacher</stored-value>
+   </pair>
+   <pair>
+      <displayed-value>Author</displayed-value>
+      <stored-value>author</stored-value>
+   </pair>
+   <pair>
+      <displayed-value>Learner</displayed-value>
+      <stored-value>learner</stored-value>
+   </pair>
+   <pair>
+      <displayed-value>Manager</displayed-value>
+      <stored-value>manager</stored-value>
+   </pair>
+   </value-pairs>
    <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
      <pair>
        <displayed-value>ISSN</displayed-value>
@@ -354,7 +638,7 @@ it, please enter the types and the actual numbers or codes.</hint>
    <!-- default language order: (from dspace 1.2.1)
         "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
      -->
-   <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+   <value-pairs value-pairs-name="common_iso_languages" dc-term="language">
      <pair>
        <displayed-value>N/A</displayed-value>
        <stored-value></stored-value>
@@ -364,6 +648,26 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>en_US</stored-value>
       </pair>
      <pair>
+       <displayed-value>English</displayed-value>
+       <stored-value>en</stored-value>
+     </pair>
+      <pair>
+       <displayed-value>Marathi</displayed-value>
+       <stored-value>ma</stored-value>
+     </pair>
+      <pair>
+       <displayed-value>Hindi</displayed-value>
+       <stored-value>hi</stored-value>
+     </pair>
+      <pair>
+       <displayed-value>Telegu</displayed-value>
+       <stored-value>te</stored-value>
+     </pair>
+      <pair>
+       <displayed-value>Gujarati</displayed-value>
+       <stored-value>gu</stored-value>
+     </pair>
+      <pair>
        <displayed-value>English</displayed-value>
        <stored-value>en</stored-value>
      </pair>

@@ -100,9 +100,11 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Series</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Sponsor</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifier</message>
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language (ISO)</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Language</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Keyword</message>
-
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_context">Context</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_learningResourceType">Learning Resource Type</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Type</message>
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Creator</message>
